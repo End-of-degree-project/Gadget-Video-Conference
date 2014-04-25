@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?><Module><ModulePrefs author="The kune development team" author_link="http://kune.ourproject.org" height="640" title="Kune gadget sample"><Require feature="wave"/><Require feature="dynamic-height"/><Require feature="setprefs"/><Require feature="wave"/></ModulePrefs><Content type="html"><![CDATA[<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>function videoGadgetDeploy(){
+  var $intern_14 = '', $intern_11 = ' top: -1000px;', $intern_28 = '" for "gwt:onLoadErrorFn"', $intern_30 = '" for "gwt:onPropertyErrorFn"', $intern_20 = '");', $intern_59 = '.cache.js', $intern_38 = '/', $intern_52 = '14B052344D4EBE501FB85E87E8F16A34', $intern_53 = '40C98C9A3617754E24E197514910988E', $intern_54 = '6CB32BB0927A69FA45E8A736E014EC6E', $intern_58 = ':', $intern_13 = '<!doctype html>', $intern_15 = '<html><head><\/head><body><\/body><\/html>', $intern_32 = '=', $intern_55 = 'ADFC3D50F59092B59702F2AE53AAD02E', $intern_56 = 'B6D6C0778F3D9492B746A0CB82FB5039', $intern_27 = 'Bad handler "', $intern_57 = 'CAFAFC6EBB1B482AC4318A5F62B8191D', $intern_12 = 'CSS1Compat', $intern_18 = 'Chrome', $intern_17 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_36 = '_', $intern_1 = 'begin', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_35 = 'country', $intern_61 = 'end', $intern_19 = 'eval("', $intern_47 = 'gecko', $intern_48 = 'gecko1_8', $intern_2 = 'gwt.codesvr.videoGadgetDeploy=', $intern_3 = 'gwt.codesvr=', $intern_26 = 'gwt:onLoadErrorFn', $intern_29 = 'gwt:onPropertyErrorFn', $intern_31 = 'gwt:property', $intern_25 = 'head', $intern_46 = 'ie6', $intern_45 = 'ie8', $intern_44 = 'ie9', $intern_8 = 'iframe', $intern_22 = 'javascript', $intern_9 = 'javascript:""', $intern_34 = 'lang', $intern_60 = 'loadExternalRefs', $intern_33 = 'locale', $intern_24 = 'moduleRequested', $intern_23 = 'moduleStartup', $intern_43 = 'msie', $intern_40 = 'opera', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_42 = 'safari', $intern_21 = 'script', $intern_50 = 'selectingPermutation', $intern_5 = 'startup', $intern_16 = 'undefined', $intern_49 = 'unknown', $intern_37 = 'url', $intern_39 = 'user.agent', $intern_4 = 'videoGadgetDeploy', $intern_51 = 'videoGadgetDeploy.devmode.js', $intern_41 = 'webkit';
+  var $wnd = window;
+  var $doc = document;
+  sendStats($intern_0, $intern_1);
+  function isHostedMode(){
+    var query = $wnd.location.search;
+    return query.indexOf($intern_2) != -1 || query.indexOf($intern_3) != -1;
+  }
+
+  function sendStats(evtGroupString, typeString){
+    if ($wnd.__gwtStatsEvent) {
+      $wnd.__gwtStatsEvent({moduleName:$intern_4, sessionId:$wnd.__gwtStatsSessionId, subSystem:$intern_5, evtGroup:evtGroupString, millis:(new Date).getTime(), type:typeString});
+    }
+  }
+
+  videoGadgetDeploy.__sendStats = sendStats;
+  videoGadgetDeploy.__moduleName = $intern_4;
+  videoGadgetDeploy.__errFn = null;
+  videoGadgetDeploy.__moduleBase = $intern_6;
+  videoGadgetDeploy.__softPermutationId = 0;
+  videoGadgetDeploy.__computePropValue = null;
+  videoGadgetDeploy.__getPropMap = null;
+  videoGadgetDeploy.__gwtInstallCode = function(){
+  }
+  ;
+  videoGadgetDeploy.__gwtStartLoadingFragment = function(){
+    return null;
+  }
+  ;
+  var __gwt_isKnownPropertyValue = function(){
+    return false;
+  }
+  ;
+  var __gwt_getMetaProperty = function(){
+    return null;
+  }
+  ;
+  __propertyErrorFunction = null;
+  var activeModules = $wnd.__gwt_activeModules = $wnd.__gwt_activeModules || {};
+  activeModules[$intern_4] = {moduleName:$intern_4};
+  var frameDoc;
+  function getInstallLocationDoc(){
+    setupInstallLocation();
+    return frameDoc;
+  }
+
+  function getInstallLocation(){
+    setupInstallLocation();
+    return frameDoc.getElementsByTagName($intern_7)[0];
+  }
+
+  function setupInstallLocation(){
+    if (frameDoc) {
+      return;
+    }
+    var scriptFrame = $doc.createElement($intern_8);
+    scriptFrame.src = $intern_9;
+    scriptFrame.id = $intern_4;
+    scriptFrame.style.cssText = $intern_10 + $intern_11;
+    scriptFrame.tabIndex = -1;
+    $doc.body.appendChild(scriptFrame);
+    frameDoc = scriptFrame.contentDocument;
+    if (!frameDoc) {
+      frameDoc = scriptFrame.contentWindow.document;
+    }
+    frameDoc.open();
+    var doctype = document.compatMode == $intern_12?$intern_13:$intern_14;
+    frameDoc.write(doctype + $intern_15);
+    frameDoc.close();
+  }
+
+  function installScript(filename){
+    function setupWaitForBodyLoad(callback){
+      function isBodyLoaded(){
+        if (typeof $doc.readyState == $intern_16) {
+          return typeof $doc.body != $intern_16 && $doc.body != null;
+        }
+        return /loaded|complete/.test($doc.readyState);
+      }
+
+      var bodyDone = isBodyLoaded();
+      if (bodyDone) {
+        callback();
+        return;
+      }
+      function onBodyDone(){
+        if (!bodyDone) {
+          bodyDone = true;
+          callback();
+          if ($doc.removeEventListener) {
+            $doc.removeEventListener($intern_17, onBodyDone, false);
+          }
+          if (onBodyDoneTimerId) {
+            clearInterval(onBodyDoneTimerId);
+          }
+        }
+      }
+
+      if ($doc.addEventListener) {
+        $doc.addEventListener($intern_17, onBodyDone, false);
+      }
+      var onBodyDoneTimerId = setInterval(function(){
+        if (isBodyLoaded()) {
+          onBodyDone();
+        }
+      }
+      , 50);
+    }
+
+    function installCode(code){
+      function removeScript(body, element){
+      }
+
+      var docbody = getInstallLocation();
+      var doc = getInstallLocationDoc();
+      var script;
+      if (navigator.userAgent.indexOf($intern_18) > -1 && window.JSON) {
+        var scriptFrag = doc.createDocumentFragment();
+        scriptFrag.appendChild(doc.createTextNode($intern_19));
+        for (var i = 0; i < code.length; i++) {
+          var c = window.JSON.stringify(code[i]);
+          scriptFrag.appendChild(doc.createTextNode(c.substring(1, c.length - 1)));
+        }
+        scriptFrag.appendChild(doc.createTextNode($intern_20));
+        script = doc.createElement($intern_21);
+        script.language = $intern_22;
+        script.appendChild(scriptFrag);
+        docbody.appendChild(script);
+        removeScript(docbody, script);
+      }
+       else {
+        for (var i = 0; i < code.length; i++) {
+          script = doc.createElement($intern_21);
+          script.language = $intern_22;
+          script.text = code[i];
+          docbody.appendChild(script);
+          removeScript(docbody, script);
+        }
+      }
+    }
+
+    videoGadgetDeploy.onScriptDownloaded = function(code){
+      setupWaitForBodyLoad(function(){
+        installCode(code);
+      }
+      );
+    }
+    ;
+    sendStats($intern_23, $intern_24);
+    var script = $doc.createElement($intern_21);
+    script.src = filename;
+    $doc.getElementsByTagName($intern_25)[0].appendChild(script);
+  }
+
+  videoGadgetDeploy.__startLoadingFragment = function(fragmentFile){
+    return computeUrlForResource(fragmentFile);
+  }
+  ;
+  videoGadgetDeploy.__installRunAsyncCode = function(code){
+    var docbody = getInstallLocation();
+    var script = getInstallLocationDoc().createElement($intern_21);
+    script.language = $intern_22;
+    script.text = code;
+    docbody.appendChild(script);
+  }
+  ;
+  function processMetas(){
+    var metaProps = {};
+    var propertyErrorFunc;
+    var onLoadErrorFunc;
+    var meta;
+    var prefs = new $wnd.gadgets.Prefs;
+    if (meta = prefs.getString($intern_26)) {
+      try {
+        onLoadErrorFunc = eval(meta);
+      }
+       catch (e) {
+        alert($intern_27 + content + $intern_28);
+      }
+    }
+    if (meta = prefs.getString($intern_29)) {
+      try {
+        propertyErrorFunc = eval(meta);
+      }
+       catch (e) {
+        alert($intern_27 + content + $intern_30);
+      }
+    }
+    if (meta = prefs.getArray($intern_31)) {
+      for (var i = 0; i < meta.length; i++) {
+        var content = meta[i];
+        if (content) {
+          var value, eq = content.indexOf($intern_32);
+          if (eq >= 0) {
+            name = content.substring(0, eq);
+            value = content.substring(eq + 1);
+          }
+           else {
+            name = content;
+            value = $intern_14;
+          }
+          metaProps[name] = value;
+        }
+      }
+    }
+    if (metaProps[$intern_33] == null) {
+      var lang = $wnd.gadgets.util.getUrlParameters()[$intern_34];
+      if (lang != null) {
+        var country = $wnd.gadgets.util.getUrlParameters()[$intern_35];
+        if (country != null) {
+          metaProps[$intern_33] = lang + $intern_36 + country;
+        }
+         else {
+          metaProps[$intern_33] = lang;
+        }
+      }
+    }
+    __gwt_getMetaProperty = function(name){
+      var value = metaProps[name];
+      return value == null?null:value;
+    }
+    ;
+    __propertyErrorFunction = propertyErrorFunc;
+    videoGadgetDeploy.__errFn = onLoadErrorFunc;
+  }
+
+  function computeScriptBase(){
+    var tmpBase = $wnd.gadgets.util.getUrlParameters()[$intern_37];
+    tmpBase = tmpBase.substring(0, tmpBase.lastIndexOf($intern_38) + 1);
+    return tmpBase;
+  }
+
+  function computeUrlForResource(resource){
+    var cacheSpec;
+    if (resource.match(/\.cache\.(js|html)$/)) {
+      cacheSpec = {refreshInterval:31536000};
+    }
+    if (!resource.match(/^[a-zA-Z]+:\/\//)) {
+      resource = videoGadgetDeploy.__moduleBase + resource;
+    }
+    return $wnd.gadgets.io.getProxyUrl(resource, cacheSpec);
+  }
+
+  function getCompiledCodeFilename(){
+    var answers = [];
+    var softPermutationId;
+    function unflattenKeylistIntoAnswers(propValArray, value){
+      var answer = answers;
+      for (var i = 0, n = propValArray.length - 1; i < n; ++i) {
+        answer = answer[propValArray[i]] || (answer[propValArray[i]] = []);
+      }
+      answer[propValArray[n]] = value;
+    }
+
+    var values = [];
+    var providers = [];
+    function computePropValue(propName){
+      var value = providers[propName](), allowedValuesMap = values[propName];
+      if (value in allowedValuesMap) {
+        return value;
+      }
+      var allowedValuesList = [];
+      for (var k in allowedValuesMap) {
+        allowedValuesList[allowedValuesMap[k]] = k;
+      }
+      if (__propertyErrorFunc) {
+        __propertyErrorFunc(propName, allowedValuesList, value);
+      }
+      throw null;
+    }
+
+    providers[$intern_39] = function(){
+      var ua = navigator.userAgent.toLowerCase();
+      var makeVersion = function(result){
+        return parseInt(result[1]) * 1000 + parseInt(result[2]);
+      }
+      ;
+      if (function(){
+        return ua.indexOf($intern_40) != -1;
+      }
+      ())
+        return $intern_40;
+      if (function(){
+        return ua.indexOf($intern_41) != -1;
+      }
+      ())
+        return $intern_42;
+      if (function(){
+        return ua.indexOf($intern_43) != -1 && $doc.documentMode >= 9;
+      }
+      ())
+        return $intern_44;
+      if (function(){
+        return ua.indexOf($intern_43) != -1 && $doc.documentMode >= 8;
+      }
+      ())
+        return $intern_45;
+      if (function(){
+        var result = /msie ([0-9]+)\.([0-9]+)/.exec(ua);
+        if (result && result.length == 3)
+          return makeVersion(result) >= 6000;
+      }
+      ())
+        return $intern_46;
+      if (function(){
+        return ua.indexOf($intern_47) != -1;
+      }
+      ())
+        return $intern_48;
+      return $intern_49;
+    }
+    ;
+    values[$intern_39] = {gecko1_8:0, ie6:1, ie8:2, ie9:3, opera:4, safari:5};
+    __gwt_isKnownPropertyValue = function(propName, propValue){
+      return propValue in values[propName];
+    }
+    ;
+    videoGadgetDeploy.__getPropMap = function(){
+      var result = {};
+      for (var key in values) {
+        if (values.hasOwnProperty(key)) {
+          result[key] = computePropValue(key);
+        }
+      }
+      return result;
+    }
+    ;
+    videoGadgetDeploy.__computePropValue = computePropValue;
+    $wnd.__gwt_activeModules[$intern_4].bindings = videoGadgetDeploy.__getPropMap;
+    sendStats($intern_0, $intern_50);
+    if (isHostedMode()) {
+      return computeUrlForResource($intern_51);
+    }
+    var strongName;
+    try {
+      unflattenKeylistIntoAnswers([$intern_45], $intern_52);
+      unflattenKeylistIntoAnswers([$intern_42], $intern_53);
+      unflattenKeylistIntoAnswers([$intern_46], $intern_54);
+      unflattenKeylistIntoAnswers([$intern_40], $intern_55);
+      unflattenKeylistIntoAnswers([$intern_48], $intern_56);
+      unflattenKeylistIntoAnswers([$intern_44], $intern_57);
+      strongName = answers[computePropValue($intern_39)];
+      var idx = strongName.indexOf($intern_58);
+      if (idx != -1) {
+        softPermutationId = parseInt(strongName.substring(idx + 1), 10);
+        strongName = strongName.substring(0, idx);
+      }
+    }
+     catch (e) {
+    }
+    videoGadgetDeploy.__softPermutationId = softPermutationId;
+    return computeUrlForResource(strongName + $intern_59);
+  }
+
+  function loadExternalStylesheets(){
+    if (!$wnd.__gwt_stylesLoaded) {
+      $wnd.__gwt_stylesLoaded = {};
+    }
+    sendStats($intern_60, $intern_1);
+    sendStats($intern_60, $intern_61);
+  }
+
+  processMetas();
+  videoGadgetDeploy.__moduleBase = computeScriptBase();
+  activeModules[$intern_4].moduleBase = videoGadgetDeploy.__moduleBase;
+  var filename = getCompiledCodeFilename();
+  loadExternalStylesheets();
+  sendStats($intern_0, $intern_61);
+  installScript(filename);
+  return true;
+}
+
+videoGadgetDeploy.succeeded = videoGadgetDeploy();
+</script>
+<div id="__gwt_gadget_content_div"></div>]]></Content></Module>
