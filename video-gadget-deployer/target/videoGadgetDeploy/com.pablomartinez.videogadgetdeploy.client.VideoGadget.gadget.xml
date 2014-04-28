@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><Module><ModulePrefs author="The kune development team" author_link="http://kune.ourproject.org" height="640" title="Kune gadget sample"><Require feature="wave"/><Require feature="dynamic-height"/><Require feature="setprefs"/><Require feature="wave"/></ModulePrefs><Content type="html"><![CDATA[<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <script>function videoGadgetDeploy(){
-  var $intern_14 = '', $intern_11 = ' top: -1000px;', $intern_28 = '" for "gwt:onLoadErrorFn"', $intern_30 = '" for "gwt:onPropertyErrorFn"', $intern_20 = '");', $intern_59 = '.cache.js', $intern_38 = '/', $intern_52 = '14B052344D4EBE501FB85E87E8F16A34', $intern_53 = '40C98C9A3617754E24E197514910988E', $intern_54 = '6CB32BB0927A69FA45E8A736E014EC6E', $intern_58 = ':', $intern_13 = '<!doctype html>', $intern_15 = '<html><head><\/head><body><\/body><\/html>', $intern_32 = '=', $intern_55 = 'ADFC3D50F59092B59702F2AE53AAD02E', $intern_56 = 'B6D6C0778F3D9492B746A0CB82FB5039', $intern_27 = 'Bad handler "', $intern_57 = 'CAFAFC6EBB1B482AC4318A5F62B8191D', $intern_12 = 'CSS1Compat', $intern_18 = 'Chrome', $intern_17 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_36 = '_', $intern_1 = 'begin', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_35 = 'country', $intern_61 = 'end', $intern_19 = 'eval("', $intern_47 = 'gecko', $intern_48 = 'gecko1_8', $intern_2 = 'gwt.codesvr.videoGadgetDeploy=', $intern_3 = 'gwt.codesvr=', $intern_26 = 'gwt:onLoadErrorFn', $intern_29 = 'gwt:onPropertyErrorFn', $intern_31 = 'gwt:property', $intern_25 = 'head', $intern_46 = 'ie6', $intern_45 = 'ie8', $intern_44 = 'ie9', $intern_8 = 'iframe', $intern_22 = 'javascript', $intern_9 = 'javascript:""', $intern_34 = 'lang', $intern_60 = 'loadExternalRefs', $intern_33 = 'locale', $intern_24 = 'moduleRequested', $intern_23 = 'moduleStartup', $intern_43 = 'msie', $intern_40 = 'opera', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_42 = 'safari', $intern_21 = 'script', $intern_50 = 'selectingPermutation', $intern_5 = 'startup', $intern_16 = 'undefined', $intern_49 = 'unknown', $intern_37 = 'url', $intern_39 = 'user.agent', $intern_4 = 'videoGadgetDeploy', $intern_51 = 'videoGadgetDeploy.devmode.js', $intern_41 = 'webkit';
+  var $intern_14 = '', $intern_11 = ' top: -1000px;', $intern_28 = '" for "gwt:onLoadErrorFn"', $intern_30 = '" for "gwt:onPropertyErrorFn"', $intern_20 = '");', $intern_59 = '.cache.js', $intern_38 = '/', $intern_52 = '32688893B7030E9C23626DF09477392B', $intern_53 = '74E6FD91E609D55A065F02B834119950', $intern_54 = '7B6DB393ECA56D392AC8198D8765D9C0', $intern_55 = '98A8C1F9F9C5CDD81056EC33B621609A', $intern_58 = ':', $intern_13 = '<!doctype html>', $intern_15 = '<html><head><\/head><body><\/body><\/html>', $intern_32 = '=', $intern_27 = 'Bad handler "', $intern_12 = 'CSS1Compat', $intern_18 = 'Chrome', $intern_56 = 'DFE76EE32A83FE1C979CD38CD0119D88', $intern_17 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_57 = 'EE27342889711544D0C036F92E948C21', $intern_36 = '_', $intern_1 = 'begin', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_35 = 'country', $intern_61 = 'end', $intern_19 = 'eval("', $intern_47 = 'gecko', $intern_48 = 'gecko1_8', $intern_2 = 'gwt.codesvr.videoGadgetDeploy=', $intern_3 = 'gwt.codesvr=', $intern_26 = 'gwt:onLoadErrorFn', $intern_29 = 'gwt:onPropertyErrorFn', $intern_31 = 'gwt:property', $intern_25 = 'head', $intern_46 = 'ie6', $intern_45 = 'ie8', $intern_44 = 'ie9', $intern_8 = 'iframe', $intern_22 = 'javascript', $intern_9 = 'javascript:""', $intern_34 = 'lang', $intern_60 = 'loadExternalRefs', $intern_33 = 'locale', $intern_24 = 'moduleRequested', $intern_23 = 'moduleStartup', $intern_43 = 'msie', $intern_40 = 'opera', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_42 = 'safari', $intern_21 = 'script', $intern_50 = 'selectingPermutation', $intern_5 = 'startup', $intern_16 = 'undefined', $intern_49 = 'unknown', $intern_37 = 'url', $intern_39 = 'user.agent', $intern_4 = 'videoGadgetDeploy', $intern_51 = 'videoGadgetDeploy.devmode.js', $intern_41 = 'webkit';
   var $wnd = window;
   var $doc = document;
   sendStats($intern_0, $intern_1);
@@ -335,12 +335,12 @@
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers([$intern_45], $intern_52);
-      unflattenKeylistIntoAnswers([$intern_42], $intern_53);
-      unflattenKeylistIntoAnswers([$intern_46], $intern_54);
+      unflattenKeylistIntoAnswers([$intern_48], $intern_52);
+      unflattenKeylistIntoAnswers([$intern_44], $intern_53);
+      unflattenKeylistIntoAnswers([$intern_42], $intern_54);
       unflattenKeylistIntoAnswers([$intern_40], $intern_55);
-      unflattenKeylistIntoAnswers([$intern_48], $intern_56);
-      unflattenKeylistIntoAnswers([$intern_44], $intern_57);
+      unflattenKeylistIntoAnswers([$intern_46], $intern_56);
+      unflattenKeylistIntoAnswers([$intern_45], $intern_57);
       strongName = answers[computePropValue($intern_39)];
       var idx = strongName.indexOf($intern_58);
       if (idx != -1) {

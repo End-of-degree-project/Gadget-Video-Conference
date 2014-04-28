@@ -109,7 +109,12 @@ public class VideoGadgetMainPanel extends Composite {
         _mainPanel.add(_frame);
       }
     }
+    adjustHeight();
   }
+  
+  private static native void adjustHeight() /*-{
+    $wnd.gadgets.window.adjustHeight();
+  }-*/;
   
   public String formatSource(String source){
     String invalid = "[^a-zA-Z0-9]";
